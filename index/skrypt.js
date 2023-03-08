@@ -42,35 +42,11 @@ function showImage()
     a = Math.floor(Math.random()*pics.length);
     e = Math.floor(Math.random()*pics.length);
     f = Math.floor(Math.random()*pics.length);  
-    let ranNumb = 0;
 
-        document.getElementById('driver').src = `./drivers/${pics[a]}`
-        document.getElementById('driver2').src = `./drivers/${pics[e]}`
-        document.getElementById('driver3').src = `./drivers/${pics[f]}`
-        if(e == a)
-        {
-            e = Math.floor(Math.random()*pics.length);
-        }
-        else if(e == f)
-        {
-            f = Math.floor(Math.random()*pics.length);
-        }
-        if(a == e)
-        {
-            a = Math.floor(Math.random()*pics.length);
-        }
-        else if(a == f)
-        {
-            a = Math.floor(Math.random()*pics.length);
-        }
-        if(f == a)
-        {
-            f = Math.floor(Math.random()*pics.length);
-        }
-        else if(f == e)
-        {
-            f = Math.floor(Math.random()*pics.length);
-        }
+
+    document.getElementById('driver').src = `./drivers/${pics[a]}`
+    document.getElementById('driver2').src = `./drivers/${pics[e]}`
+    document.getElementById('driver3').src = `./drivers/${pics[f]}`
 
 
     if(a == 0)
